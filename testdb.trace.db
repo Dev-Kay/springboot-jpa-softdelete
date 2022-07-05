@@ -1,0 +1,28 @@
+2022-07-05 00:17:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    create table product (\000a       id bigint not null auto_increment,\000a        deleted bit,\000a        description varchar(1000) not null,\000a        name varchar(500) not null,\000a        price decimal(19,2) not null,\000a        primary key (id)\000a    ) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+
+    create table product (
+       id bigint not null auto_increment,
+        deleted bit,
+        description varchar(1000) not null,
+        name varchar(500) not null,
+        price decimal(19,2) not null,
+        primary key (id)
+    ) engine=InnoDB [42001-214]
+2022-07-05 00:17:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCT" not found (this database is empty); SQL statement:
+insert into product (deleted, description, name, price) values (?, ?, ?, ?) [42104-214]
+2022-07-05 00:19:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    create table product (\000a       id bigint not null auto_increment,\000a        deleted bit,\000a        description varchar(1000) not null,\000a        name varchar(500) not null,\000a        price decimal(19,2) not null,\000a        primary key (id)\000a    ) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+
+    create table product (
+       id bigint not null auto_increment,
+        deleted bit,
+        description varchar(1000) not null,
+        name varchar(500) not null,
+        price decimal(19,2) not null,
+        primary key (id)
+    ) engine=InnoDB [42001-214]
+2022-07-05 00:19:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCT" not found (this database is empty); SQL statement:
+insert into product (deleted, description, name, price) values (?, ?, ?, ?) [42104-214]
